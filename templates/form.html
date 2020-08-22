@@ -1,0 +1,121 @@
+{% extends "template.html" %}
+{from form import KeepCount}
+
+{% block title %}
+Form
+{% endblock%}
+
+{% block content %}
+
+<br><h1>Join the Event!</h1><br>
+
+<form>
+    <div class="form-group">
+        <label for="first_name">First Name</label>
+        <input type="first_name" class="form-control" id="first_name">
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name</label>
+      <input type="last_name" class="form-control" id="last_name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <!-- <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div> -->
+    <div class="form-group">
+      <label for="country">Country</label>
+      <input type="country" class="form-control" id="country">
+    </div>
+    <div class="form-group">
+      <label for="size">What type of meetup are you interested in?</label>
+      <select class="form-control" id="size">
+        <option>1-on-1 or 2 person meetup</option>
+        <option>3 person meetup</option>
+        <option>4 person meetup</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="type">What is your 16 personality type? (Ex. ENFJ)</label>
+      <input type="type" class="form-control" id="type">
+    </div>
+    <div class="form-group">
+      <label for="describe">Out of these words, which would you use to describe youself?</label><br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" onClick="return KeepCount()">
+        <label class="form-check-label" for="inlineCheckbox1">outgoing</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" onClick="return KeepCount()">
+        <label class="form-check-label" for="inlineCheckbox2">quiet</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2" onClick="return KeepCount()">
+        <label class="form-check-label" for="inlineCheckbox3">caring</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2" onClick="return KeepCount()">
+        <label class="form-check-label" for="inlineCheckbox4">funny</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2" onClick="return KeepCount()">
+        <label class="form-check-label" for="inlineCheckbox5">athletic</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2" onClick="return KeepCount()">
+        <label class="form-check-label" for="inlineCheckbox6">easy-going</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option2" onClick="return KeepCount()">
+        <label class="form-check-label" for="inlineCheckbox7">optimistic</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option2" onClick="return KeepCount()">
+        <label class="form-check-label" for="inlineCheckbox8">energetic</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option2" onClick="return KeepCount()">
+        <label class="form-check-label" for="inlineCheckbox9">logical</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option2" onClick="return KeepCount()">
+        <label class="form-check-label" for="inlineCheckbox10">future-oriented</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="size">What is your Myers-Briggs personality type (16 personalities)?</label>
+      <select class="form-control" id="size">
+        <option>ENFJ</option>
+        <option>INFJ</option>
+        <option>ENFP</option>
+        <option>INFP</option>
+        <option>INTJ</option>
+        <option>ENTJ</option>
+        <option>INTP</option>
+        <option>ENTP</option>
+        <option>ESFP</option>
+        <option>ISFP</option>
+        <option>ESFJ</option>
+        <option>ISFJ</option>
+        <option>ISTP</option>
+        <option>ESTP</option>
+        <option>ISTJ</option>
+        <option>ESTJ</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="schedule">Which of the following times are you available to chat this Saturday 7/25? (All times are in PST)</label>
+      <select class="form-control" id="size">
+        <option>11:00 AM</option>
+        <option>3:00 PM</option>
+        <option>5:00 PM</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Fudge It!</button>
+</form>
+
+
+{% endblock %}

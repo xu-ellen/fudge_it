@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+{% extends "template.html" %}
+
+{% block title %}
+Fudge It!
+{% endblock%}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='template.css')}}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+{% endblock %}
+
+{% block content %}
+
+  <br><h1> Skip the chit-chat </h1><br>
+
+  <h5>Fudge It! Let's Skip the Chit-chat is company provides a platform that connects high schoolers based on personality and interests, simplifying the process of setting up a virtual call to meet new friends and engage in meaningful and memorable conversation.</h5>
+
+  <br><a class="btn btn-primary" href="/chat" role="button">Fudge It! Get Started</a>
+
+{% endblock %}
