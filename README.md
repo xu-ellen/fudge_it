@@ -2,4 +2,4 @@ Fudge It! Let's Skip the Chit-chat provides a platform that connects high school
 
 Code for website backbone and matching program.
 
-View site: https://fudge-it.herokuapp.com/
+Site backbone: https://fudge-it.herokuapp.com/
