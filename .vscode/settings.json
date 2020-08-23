@@ -1,4 +1,0 @@
-{
-    "python.pythonPath": "C:\\Ellen\\Anaconda3\\envs\\fudge_it\\python.exe"
-    "python.linting.pylintArgs": ["--load-plugins", "pylint-flask", "pyling-flask-sqlalchemy"]
-}
